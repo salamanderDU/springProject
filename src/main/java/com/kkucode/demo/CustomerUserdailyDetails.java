@@ -1,6 +1,5 @@
 package com.kkucode.demo;
-//duke come here
-//sr in
+
 import java.util.Collection;
 
 import org.apache.catalina.User;
