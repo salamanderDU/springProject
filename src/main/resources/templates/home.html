@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+   
+    <title>homepage</title>
+  </head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<body>  
+         <!-- nav bar บนสุด -->
+        <main class="main" id="top">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll" style="background-color: rgb(255, 255, 255);">
+              <div class="container"><a class="navbar-brand" href="home"><span class="fw-bold text-primary ms-2">Let's park</span></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto pt-2 pt-lg-0 font-base"></ul>
+                  <form>
+                  	<a href="home" class="link"><i class="bi-house-door"> </i> Home </a>
+                    
+                    <a href="login" class="link"><i class="bi-person"></i> Logout</a>
+                    
+                  </form>
+                </div>
+              </div>
+            </nav><br>
+            <section class="mt-7 py-0">
+              <div class="bg-holder w-50 bg-right d-none d-lg-block">
+              </div>
+        <!-- nav bar บนสุด -->
+
+        <!-- ==================landing page=================== -->
+        <section class="mt-10 py-0">
+            <div class="bg-holder w-50 bg-right d-none d-lg-block" style="margin: top 50px;"><img class="img" style="width: 750px; height: 650px;" th:src="@{/img/carparking.jpg}" alt="qrcode"/></div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 py-5 py-xl-5 py-xxl-7"><br><br><br>
+                  <h4 class="display-3 text-1000 fw-normal" style="font-size: 35px;">Park before arriving !</h4>
+                  <h1 class="display-3 text-primary fw-bold">Discover nice spaces</h1>
+                  <div class="pt-5">
+                  <nav>
+                    <div class="nav nav-tabs voyage-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-day-tab" data-bs-toggle="tab" data-bs-target="#nav-day" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Daily<i class="fas fa-map-marker-alt"></i></button>
+                      <button class="nav-link" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Monthly<i class="fas fa-plane"></i></button>                      
+                    </div>
+                    <!-- Day -->
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="nav-day" role="tabpanel" aria-labelledby="nav-day-tab">
+                        <form class="row g-4 mt-5">
+                          <div class="col-sm-6 col-md-6 col-xl-5">
+                            <div class="input-group-icon">
+                                <label class="form-label" for="form3Example3cg">arrival day </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 col-xl-5">
+                            <div class="input-group-icon">
+                                <label class="form-label" for="form3Example3cg">arrival time</label>                              
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 col-xl-5">
+                            <div class="input-group-icon">
+                              <input class="form-control input-box form-voyage-control" id="inputdateOne" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 col-xl-5">
+                            <div class="input-group-icon">
+                              <input class="form-control input-box form-voyage-control" placeholder="Enter Your arrival time"/><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- Day -->
+                      <!-- Month -->
+                      <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="nav-month-tab">
+                        <form class="row g-4 mt-5">
+                          <div class="col-6">
+                            <div class="input-group-icon">
+                                <label class="form-label" for="form3Example3cg">arrival day </label>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="input-group-icon">
+                                <label class="form-label" for="form3Example3cg">exid day </label>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="input-group-icon">
+                              <input class="form-control input-box form-voyage-control" id="inputDateThree" type="date"/><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="input-group-icon">
+                              <input class="form-control input-box form-voyage-control" id="inputDateFour" type="date"/><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                            </div>
+                          </div>                 
+                          </div>
+                         
+                        </form>
+                      <!-- Month -->
+                  <!-- ปุ่ม submit ไปหน้า bookpark day/month ใช้ปุ่มเดียวกัน--> 
+                        <div class="my-5 text-center" style="margin-left: -100px;">
+                          <a th:href="@{/login}"><button class="btn btn-lg btn-warning hover-top btn-glow rounded-pill border-0" style="width: 150px; " type="button">Find parking</button></a>
+                        </div>
+                  <!-- ปุ่ม submit ไปหน้า bookpark --> 
+                      </div>                    
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ===================landingpage=============================-->
+
+        <!-- <section How It happens> begin ============================-->
+            <section class="py-0" id="howitworks">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="text-center">How It happens </p>
+                      <h1 class="text-center lh-sm fs-lg-6 fs-xxl-7"> Discover amazing spaces</h1><br><br>
+                    </div>
+                  </div>
+                  <div class="row mt-6">
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                      <div class="badge badge-circle bg-soft-primary flex-center">
+                        <div class="text-primary fs-7 font-base" style="font-size: xx-large;">1</div>
+                      </div>
+                      <h5 class="text-primary text-center mt-3">Find your car park! </h5>
+                      <p class="text-center mx-xl-7">Find parking anywhere, for now or for later</p>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                      <div class="badge badge-circle bg-soft-warning flex-center">
+                        <div class="text-warning fs-7 font-base" style="font-size: xx-large;">2</div>
+                      </div>
+                      <h5 class="text-primary text-center mt-3">Compare, book! </h5>
+                      <p class="text-center mx-xl-7">Compare prices & pick the place that’s best for you</p>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+                      <div class="badge badge-circle bg-soft-success flex-center">
+                        <div class="text-success fs-7 font-base" style="font-size: xx-large;">3 </div>
+                      </div>
+                      <h5 class="text-primary text-center mt-3">And park!</h5>
+                      <p class="text-center mx-xl-7">Upon arrival, just show your reservation in the car park. There is no need to print anything out! </p>
+                    </div>
+                  </div>
+                  <hr class="mt-6" />
+                </div>
+              </section>
+      <!-- <section How It happens> close ============================-->
+        
+      <!-- <section Our Packages> begin ==============================-->
+      <section>
+        <div class="container-lg">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <br><h1 class="text-center lh-sm fs-lg-6 fs-xxl-7">Our Packages</h1><br>
+            </div>
+          </div> 
+        <div class="row h-100 justify-content-center">
+          <div class="col-md-4 pt-6 px-sm-7 px-md-2 px-lg-3">
+            <div class="card overflow-hidden" style="border: 0px solid rgba(0, 0, 0, 0.125 ); border-radius: 80px;">
+            
+              <!--/.bg-holder-->
+              <div class="card-body" style="border-radius: 0px; background-color: cornsilk;">
+                <div class="ms-4">
+                  <h5 class="my-4 text-800">Basic</h5>
+                  <h1 class="fs-7 text text-warning">$9</h1>
+                  <h6 class="fs--1 mb-6 text-warning">/ per day</h6>
+                  <ul class="list-unstyled">
+                    <li class="mb-3 text-900"><i class="fas fa-check-circle text-700 me-2"></i>Parking only 24 hours  
+                    </li>
+                    <li class="mb-3 text-900"><i class="fas fa-check-circle text-700 me-2"></i>Find parking anywhere
+                    </li>
+                    <li class="mb-3 text-900"><i class="fas fa-check-circle text-700 me-2"></i>Compare prices
+                    </li>
+                    <li class="mb-3 text-900"><i class="fas fa-check-circle text-700 me-2"></i>Pay once per booking  
+                    </li>
+                    <li class="mb-3 text-900"><i class="fas fa-check-circle text-700 me-2"></i>Once booked, it cannot be cancelled. 
+                    </li>
+                  </ul>
+                </div>
+                <!-- ปุ่ม -->
+                <div class="my-5 text-center">
+                  <a href="home"><button class="btn btn-lg btn-warning hover-top btn-glow rounded-pill border-0" type="button">Choose plan</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 pt-6 px-sm-7 px-md-2 px-lg-3">
+            <div class="card overflow-hidden" style="border: 0px solid rgba(0, 0, 0, 0.125 ); border-radius: 80px;">
+              <div class="card-body z-index-2" style="background-color: #c0f1d8;">
+                <div class="ms-4">
+                  <h5 class="my-4 text-800">Professional</h5>
+                  <h1 class="fs-7 text text-success">$129</h1>
+                  <h6 class="fs--1 mb-6 text-success">/ per month</h6>
+                  <ul class="list-unstyled">
+                    <li class="mb-3 text-900"><i class="fas fa-check-circle text-700 me-2"></i>Parking more than 24 hours  
+                    </li>
+                    <li class="mb-3 text-900"><i class="fas fa-check-circle text-700 me-2"></i>You Can park up to 1 month per pay
+                    </li>
+                    <li class="mb-3 text-900"><i class="fas fa-check-circle text-700 me-2"></i>No compare prices
+                    </li>
+                    <li class="mb-3 text-900"><i class="fas fa-check-circle text-700 me-2"></i>Pay once and reserve 25 times.  
+                    </li>
+                    <li class="mb-3 text-900"><i class="fas fa-check-circle text-700 me-2"></i>Once booked, it cannot be cancelled. 
+                    </li>
+                  </ul>
+                </div>
+                <!-- ปุ่ม -->
+                <div class="my-5 text-center">
+                  <a href="registerpro"><button class="btn btn-lg btn-outline-success rounded-pill" type="button">Choose plan </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section Our Packages> close ============================-->
+      <!-- ====================footer===============================-->
+              <footer class="page-footer">
+              <div id="free-quote" class="free-quote">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4 offset-lg-4">
+                      <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h6>You Need Help  ? </h6>
+                        <h3 style="color: rgb(255, 255, 255);">Get In Touch With Us Now</h3>
+                        <div class="line-dec"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8 offset-lg-2  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                      <form id="search" action="#" method="GET">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4">
+                            <fieldset>
+                              <input type="web" name="web" class="website" placeholder="Your question is" autocomplete="on" required>
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-4 col-sm-4">
+                            <fieldset>
+                              <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-4 col-sm-4">
+                            <fieldset>
+                              <button type="submit" class="main-button" style="background-color: rgb(252, 176, 77);">Ask  Now</button>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- ====================footer========================-->
+          </main>
+    </body>
+</html>
+            
+  

@@ -1,0 +1,10 @@
+body{
+	padding:0 10px;
+	background: linear-gradient(to right, rgba(219, 115, 197, 0.5), rgba(58, 125, 189, 0.5));
+	}
+
+	  .gradient-custom-4 {
+		background: linear-gradient(to right, rgba(241, 2, 182, 0.5), rgba(125, 215, 243, 0.5));
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	  }

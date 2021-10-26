@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../CSS/bookpark.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+      
+    <title>Book Park</title>
+  </head>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<body>  
+      <!-- nav bar บนสุด -->
+      <main class="main" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll" style="background-color: rgb(255, 255, 255);">
+          <div class="container"><a class="navbar-brand" href="home"><span class="fw-bold text-primary ms-2">Let's park</span></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto pt-2 pt-lg-0 font-base"></ul>
+              <form>
+                <a href="home" class="link"><i class="bi-house-door"> </i> Home </a>
+                    
+                <a href="login" class="link"><i class="bi-person"></i> Logout</a>
+              </form>
+            </div>
+          </div></nav></main>
+        </nav><br>     
+      <!-- nav bar บนสุด -->
+
+      <!-- ======================<section booktable> begin ==========================-->
+      
+      <section class="py-0" id="flights">
+        <div class="container-fluid">
+          <br><br> 
+          <h1 class="text-center" style="color: rgb(45, 45, 46);">Pick the place that’s best for you</h1><br>
+
+          <!-- แสดงข้อมูลของลูกค้า time/date arrival  -->
+          <h4 style="color: rgb(73, 73, 73); margin-left: 125px;">arrival day : xx xx xx</h4>
+          <!-- <p th:text="ดึงข้อมูลลูกค้า" ></p> -->
+          <!-- แสดงข้อมูลของลูกค้า time/date arrival  -->
+
+          <div class="row g-2 flex-center" style="margin-top: 60px;">
+            <!-- =========แถวที่1========= -->
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2" style="margin-left: 125px;">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #f197a2; min-height:230px; ">
+                <h5 class="text-light">A01</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #4152a5; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #f197a2; min-height:230px; ">
+                <h5 class="text-light">A02</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #4152a5; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #f197a2; min-height:230px; ">
+                <h5 class="text-light">A03</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #4152a5; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #f197a2; min-height:230px; ">
+                <h5 class="text-light">A04</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #4152a5; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #f197a2; min-height:230px; ">
+                <h5 class="text-light">A05</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #4152a5; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+           <!-- =========แถวที่2========= --> 
+           <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2" style="margin-left: 125px;">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #4e98b8; min-height:230px; ">
+                <h5 class="text-light">B01</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #e96f58; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div> 
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #4e98b8; min-height:230px; ">
+                <h5 class="text-light">B02</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #e96f58; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #4e98b8; min-height:230px; ">
+                <h5 class="text-light">B03</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #e96f58; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #4e98b8; min-height:230px; ">
+                <h5 class="text-light">B04</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #e96f58; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #4e98b8; min-height:230px; ">
+                <h5 class="text-light">B05</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #e96f58; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <!-- =========แถวที่3========= -->
+            <div class="col-lg-6 col-sm-4 col-md-3 col-lg-4 col-xl-2" style="margin-left: 125px;">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #d2af91; min-height:230px; ">
+                <h5 class="text-light">C01</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #a93f3f; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #d2af91; min-height:230px; ">
+                <h5 class="text-light">C02</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #a93f3f; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #d2af91; min-height:230px; ">
+                <h5 class="text-light">C03</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #a93f3f; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #d2af91; min-height:230px; ">
+                <h5 class="text-light">C04</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+                <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #a93f3f; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3" style="background-color: #d2af91; min-height:230px; ">
+                <h5 class="text-light">C05</h5>
+                <h6 class="text-light fw-normal fs-0">$9</h6><i class="fas fa-arrow-right text-light mt-4"></i><br><br>
+               <a href="checkout"><button type="submit" class="main-button text-light" style="background-color: #a93f3f; border-radius: 50px; width: 100px;">Book  Now</button></a>
+              </div>
+            </div>
+      </section>
+       <!--============================ <section booktable> close ============================-->
+          
+        <!-- ====================footer========================-->
+      <footer class="page-footer">
+        <div id="free-quote" class="free-quote">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 offset-lg-4">
+                <div class="section-heading  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
+                  <h6>You Need Help  ? </h6>
+                  <h3 style="color: rgb(255, 255, 255);">Get In Touch With Us Now</h3>
+                  <div class="line-dec"></div>
+                </div>
+              </div>
+              <div class="col-lg-8 offset-lg-2  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                <form id="search" action="#" method="GET">
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-4">
+                      <fieldset>
+                        <input type="web" name="web" class="website" placeholder="Your question is" autocomplete="on" required>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <fieldset>
+                        <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <fieldset>
+                        <button type="submit" class="main-button" style="background-color: rgb(94, 176, 243);">Ask  Now</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- ====================footer========================-->
+    </body>
+  </html>
+    
