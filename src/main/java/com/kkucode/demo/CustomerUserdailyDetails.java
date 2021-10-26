@@ -1,7 +1,12 @@
 package com.kkucode.demo;
 <<<<<<< HEAD
+<<<<<<< HEAD
 //are you challent on me?
 //yes ok than
+=======
+//now linux
+//what you can do
+>>>>>>> c7211bffc348036603d2fac462095fb6e077b500
 =======
 //now linux
 //what you can do
